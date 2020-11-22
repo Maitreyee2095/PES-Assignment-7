@@ -1,0 +1,3 @@
+ADC_config.c:17:6:Init_TPM0	16	static
+ADC_config.c:33:6:ADC_Init_	8	static
+ADC_config.c:54:6:ADC_Buffer	24	static
