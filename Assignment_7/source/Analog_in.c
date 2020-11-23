@@ -76,7 +76,7 @@ void Init_ADC() {
 void ADC_config(uint16_t *buffs, uint32_t num) {
 
 	int i =0;
-	//stop TPM0
+	//start TPM0
 	TPM0->SC |= TPM_SC_CMOD(1);
 
 	for (i =0; i < num; i++) {
@@ -86,7 +86,7 @@ void ADC_config(uint16_t *buffs, uint32_t num) {
 		buffs[i] = ADC0->R[0];//fill buffer
 	}
 
-	// Stop Sampling
+	// Stop TPM0
 	TPM0->SC &= ~TPM_SC_CMOD_MASK;
 }
 
