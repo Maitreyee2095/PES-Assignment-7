@@ -1,3 +1,3 @@
 Analog_in.c:22:6:Init_TPM0	16	static
-Analog_in.c:46:6:Init_ADC	8	static
-Analog_in.c:77:6:ADC_config	24	static
+Analog_in.c:44:6:Init_ADC	8	static
+Analog_in.c:75:6:ADC_config	24	static
