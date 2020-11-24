@@ -1,9 +1,9 @@
 core_cm0plus.h:745:22:NVIC_EnableIRQ	16	static
 core_cm0plus.h:791:22:NVIC_ClearPendingIRQ	16	static
 core_cm0plus.h:804:22:NVIC_SetPriority	24	static
-analog_out.c:43:8:tone_to_samples	64	static
-analog_out.c:71:6:Init_TPM1	8	static
-analog_out.c:93:6:Init_DMA	8	static
-analog_out.c:127:6:Copy_DMA_buffer	16	static
-analog_out.c:145:6:Start_DMA_transfer	8	static
-analog_out.c:160:6:DMA0_IRQHandler	8	static
+analog_out.c:46:8:tone_to_samples	64	static
+analog_out.c:74:6:Init_TPM1	8	static
+analog_out.c:96:6:Init_DMA	8	static
+analog_out.c:130:6:Copy_DMA_buffer	16	static
+analog_out.c:148:6:Start_DMA_transfer	8	static
+analog_out.c:163:6:DMA0_IRQHandler	8	static

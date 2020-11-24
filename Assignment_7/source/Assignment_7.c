@@ -51,6 +51,7 @@
 
 #define SAMPLING_RATE 96000 //Sampling rate for ADC
 #define COUNT 1024 //total number of buffer elements
+#define BUFF_MAX 1024
 /*********************GLOBAL VARIABLES******************************************************/
 
 uint16_t *buff;
@@ -70,7 +71,7 @@ int main(void) {
 #endif
 
 	int sample, i=0;
-	uint16_t buffs_op[1024], buffs_ip[1024];
+	uint16_t buffs_op[BUFF_MAX], buffs_ip[BUFF_MAX];
 	int freq[] = {440, 587, 659, 880};
 	Init_DAC();
 	Init_TPM1();		//Initialize TPM1 for DAC

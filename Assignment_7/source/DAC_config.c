@@ -1,5 +1,6 @@
 /*
  * DAC_config.c
+ * This function contains DAC initialization
  *  Created on: Nov 17, 2020
  *      Author: maitreyee Rao
  *      credit : Parts of code was inspired from Alexander G Dean

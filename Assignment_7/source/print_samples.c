@@ -1,5 +1,6 @@
 /*
  * print_samples.c
+ * this file analyzes and prints the adc output
  *
  *  Created on: Nov 19, 2020
  *      Author: maitr
@@ -11,6 +12,7 @@
 #include "stdint.h"
 
 #include "fsl_debug_console.h"
+#define PERIOD 96000
 
 /**********************************************************************************************************************************
  *void print_analysis(uint16_t *buffs, uint32_t count):print analyzed data for ADC
@@ -40,6 +42,6 @@ void print_analysis(uint16_t *buffs, uint32_t total_num) {
 
 	int period = autocorrelate_detect_period(buffs, total_num, 1); //calculate period using autocorrelate function
 	PRINTF("minimum=%u maximum=%u avg=%u period=%d frequency=%d Hz\r\n",
-			minimum, maximum, sum / total_num, period, 96000 / period);
+			minimum, maximum, sum / total_num, period, PERIOD / period);
 
 }

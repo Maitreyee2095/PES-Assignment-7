@@ -1,5 +1,6 @@
 /*
  * sin_trig.c
+ * this file computes a sine wave
  *
  *  Created on: Nov 16, 2020
  *      Author: maitreyee rao

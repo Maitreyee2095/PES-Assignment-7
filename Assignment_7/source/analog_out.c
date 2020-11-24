@@ -1,6 +1,9 @@
 /*
  * analog_out.c
-
+This file contains
+tone_to_buffer, which fills buffer with tone,
+initialization of TPM1
+DMA initialization andm transfer function
  *  Created on: Nov 17, 2020
  *      Author: maitreyee Rao
  *      credit : Parts of code was inspired from Alexander G Dean
@@ -23,11 +26,11 @@
 
 
 #define PLAYOUT_FREQ 48000 //frequency 48Khz
+#define BUFF_MAX 1024
 
 
-
-uint16_t temp[1024];
-uint16_t Reload_DMA_Source[1024]; //buffer to load dma
+uint16_t temp[BUFF_MAX];
+uint16_t Reload_DMA_Source[BUFF_MAX]; //buffer to load dma
 uint32_t Reload_DMA_Byte_Count=0; //buffer for dma count
 uint32_t DMA_Playback_Count=0;
 /**********************************************************************************************************************************
@@ -79,7 +82,7 @@ void Init_TPM1()
 	// Load the mod and counter
 	TPM1->MOD = TPM_MOD_MOD(CLOCK / (CLOCK/1000));
 	TPM1->CNT = 0;
-
+	//prescaler set to 0//include dma//include cmod
 	TPM1->SC = TPM_SC_PS(0) | TPM_SC_CPWMS(0) | TPM_SC_CMOD(1) | TPM_SC_DMA_MASK;
 }
 /**********************************************************************************************************************************
@@ -159,7 +162,7 @@ void Start_DMA_transfer() {
 
 void DMA0_IRQHandler(void) {
 
-	// Clear done flag
+	// start done flag
 	DMA0->DMA[0].DSR_BCR |= DMA_DSR_BCR_DONE_MASK;
 	//start dma transfer
 	Start_DMA_transfer();

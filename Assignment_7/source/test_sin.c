@@ -1,6 +1,6 @@
 /*
  * test_sin.c
- *
+ *this files test sine wave
  *  Created on: Nov 17, 2020
  *      Author: maitreyee rao
  */

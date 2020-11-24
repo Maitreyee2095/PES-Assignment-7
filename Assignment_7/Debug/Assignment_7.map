@@ -2389,7 +2389,7 @@ OUTPUT(Assignment_7.axf elf32-littlearm)
  .debug_ranges  0x000006e0       0x28 ./board/pin_mux.o
  .debug_ranges  0x00000708       0x18 ./CMSIS/system_MKL25Z4.o
 
-.debug_macro    0x00000000     0x9235
+.debug_macro    0x00000000     0x9247
  .debug_macro   0x00000000      0x13a ./utilities/fsl_debug_console.o
  .debug_macro   0x0000013a      0xab4 ./utilities/fsl_debug_console.o
  .debug_macro   0x00000bee       0x10 ./utilities/fsl_debug_console.o
@@ -2421,34 +2421,34 @@ OUTPUT(Assignment_7.axf elf32-littlearm)
  .debug_macro   0x0000807d       0x34 ./source/Analog_in.o
  .debug_macro   0x000080b1       0xa0 ./source/Analog_in.o
  .debug_macro   0x00008151       0x10 ./source/Analog_in.o
- .debug_macro   0x00008161      0x17f ./source/Assignment_7.o
- .debug_macro   0x000082e0       0x16 ./source/Assignment_7.o
- .debug_macro   0x000082f6       0x10 ./source/Assignment_7.o
- .debug_macro   0x00008306      0x112 ./source/Assignment_7.o
- .debug_macro   0x00008418       0x34 ./source/Assignment_7.o
- .debug_macro   0x0000844c       0x10 ./source/Assignment_7.o
- .debug_macro   0x0000845c       0x10 ./source/Assignment_7.o
- .debug_macro   0x0000846c       0xb6 ./source/DAC_config.o
- .debug_macro   0x00008522       0x1c ./source/DAC_config.o
- .debug_macro   0x0000853e      0x13c ./source/analog_out.o
- .debug_macro   0x0000867a       0x58 ./source/autocorrelate.o
- .debug_macro   0x000086d2       0x2f ./source/mtb.o
- .debug_macro   0x00008701       0x82 ./source/mtb.o
- .debug_macro   0x00008783       0x10 ./source/mtb.o
- .debug_macro   0x00008793      0x111 ./source/print_samples.o
- .debug_macro   0x000088a4       0x11 ./source/semihost_hardfault.o
- .debug_macro   0x000088b5       0xc2 ./source/sin_trig.o
- .debug_macro   0x00008977      0x11a ./source/test_sin.o
- .debug_macro   0x00008a91      0x196 ./drivers/fsl_clock.o
- .debug_macro   0x00008c27       0x1c ./drivers/fsl_clock.o
- .debug_macro   0x00008c43       0xec ./drivers/fsl_lpsci.o
- .debug_macro   0x00008d2f       0xf2 ./drivers/fsl_uart.o
- .debug_macro   0x00008e21      0x12b ./board/board.o
- .debug_macro   0x00008f4c      0x123 ./board/clock_config.o
- .debug_macro   0x0000906f       0x1b ./board/peripherals.o
- .debug_macro   0x0000908a      0x107 ./board/pin_mux.o
- .debug_macro   0x00009191       0x10 ./board/pin_mux.o
- .debug_macro   0x000091a1       0x94 ./CMSIS/system_MKL25Z4.o
+ .debug_macro   0x00008161      0x185 ./source/Assignment_7.o
+ .debug_macro   0x000082e6       0x16 ./source/Assignment_7.o
+ .debug_macro   0x000082fc       0x10 ./source/Assignment_7.o
+ .debug_macro   0x0000830c      0x112 ./source/Assignment_7.o
+ .debug_macro   0x0000841e       0x34 ./source/Assignment_7.o
+ .debug_macro   0x00008452       0x10 ./source/Assignment_7.o
+ .debug_macro   0x00008462       0x10 ./source/Assignment_7.o
+ .debug_macro   0x00008472       0xb6 ./source/DAC_config.o
+ .debug_macro   0x00008528       0x1c ./source/DAC_config.o
+ .debug_macro   0x00008544      0x142 ./source/analog_out.o
+ .debug_macro   0x00008686       0x58 ./source/autocorrelate.o
+ .debug_macro   0x000086de       0x2f ./source/mtb.o
+ .debug_macro   0x0000870d       0x82 ./source/mtb.o
+ .debug_macro   0x0000878f       0x10 ./source/mtb.o
+ .debug_macro   0x0000879f      0x117 ./source/print_samples.o
+ .debug_macro   0x000088b6       0x11 ./source/semihost_hardfault.o
+ .debug_macro   0x000088c7       0xc2 ./source/sin_trig.o
+ .debug_macro   0x00008989      0x11a ./source/test_sin.o
+ .debug_macro   0x00008aa3      0x196 ./drivers/fsl_clock.o
+ .debug_macro   0x00008c39       0x1c ./drivers/fsl_clock.o
+ .debug_macro   0x00008c55       0xec ./drivers/fsl_lpsci.o
+ .debug_macro   0x00008d41       0xf2 ./drivers/fsl_uart.o
+ .debug_macro   0x00008e33      0x12b ./board/board.o
+ .debug_macro   0x00008f5e      0x123 ./board/clock_config.o
+ .debug_macro   0x00009081       0x1b ./board/peripherals.o
+ .debug_macro   0x0000909c      0x107 ./board/pin_mux.o
+ .debug_macro   0x000091a3       0x10 ./board/pin_mux.o
+ .debug_macro   0x000091b3       0x94 ./CMSIS/system_MKL25Z4.o
 
 .debug_line     0x00000000     0x5dce
  .debug_line    0x00000000      0x4b9 ./utilities/fsl_debug_console.o
@@ -2472,46 +2472,46 @@ OUTPUT(Assignment_7.axf elf32-littlearm)
  .debug_line    0x00005763      0x340 ./board/pin_mux.o
  .debug_line    0x00005aa3      0x32b ./CMSIS/system_MKL25Z4.o
 
-.debug_str      0x00000000    0x3604b
+.debug_str      0x00000000    0x36066
  .debug_str     0x00000000    0x31573 ./utilities/fsl_debug_console.o
                               0x317d3 (size before relaxing)
  .debug_str     0x00031573      0x3e1 ./startup/startup_mkl25z4.o
                                0x31f7 (size before relaxing)
  .debug_str     0x00031954      0x1a6 ./source/Analog_in.o
                               0x291f2 (size before relaxing)
- .debug_str     0x00031afa      0xde9 ./source/Assignment_7.o
-                              0x32027 (size before relaxing)
- .debug_str     0x000328e3       0x9c ./source/DAC_config.o
+ .debug_str     0x00031afa      0xdf7 ./source/Assignment_7.o
+                              0x32035 (size before relaxing)
+ .debug_str     0x000328f1       0x9c ./source/DAC_config.o
                               0x296dc (size before relaxing)
- .debug_str     0x0003297f      0x378 ./source/analog_out.o
-                              0x31770 (size before relaxing)
- .debug_str     0x00032cf7       0xc8 ./source/autocorrelate.o
+ .debug_str     0x0003298d      0x378 ./source/analog_out.o
+                              0x3177e (size before relaxing)
+ .debug_str     0x00032d05       0xc8 ./source/autocorrelate.o
                                0x469d (size before relaxing)
- .debug_str     0x00032dbf      0x532 ./source/mtb.o
+ .debug_str     0x00032dcd      0x532 ./source/mtb.o
                                0x3303 (size before relaxing)
- .debug_str     0x000332f1       0x43 ./source/print_samples.o
-                              0x308e1 (size before relaxing)
- .debug_str     0x00033334       0x1f ./source/semihost_hardfault.o
+ .debug_str     0x000332ff       0x50 ./source/print_samples.o
+                              0x308ee (size before relaxing)
+ .debug_str     0x0003334f       0x1f ./source/semihost_hardfault.o
                                0x2df0 (size before relaxing)
- .debug_str     0x00033353       0x8c ./source/sin_trig.o
+ .debug_str     0x0003336e       0x8c ./source/sin_trig.o
                               0x296ca (size before relaxing)
- .debug_str     0x000333df       0x4b ./source/test_sin.o
+ .debug_str     0x000333fa       0x4b ./source/test_sin.o
                               0x30e27 (size before relaxing)
- .debug_str     0x0003342a     0x14d7 ./drivers/fsl_clock.o
+ .debug_str     0x00033445     0x14d7 ./drivers/fsl_clock.o
                               0x322fe (size before relaxing)
- .debug_str     0x00034901      0x96b ./drivers/fsl_lpsci.o
+ .debug_str     0x0003491c      0x96b ./drivers/fsl_lpsci.o
                               0x31906 (size before relaxing)
- .debug_str     0x0003526c      0x832 ./drivers/fsl_uart.o
+ .debug_str     0x00035287      0x832 ./drivers/fsl_uart.o
                               0x31929 (size before relaxing)
- .debug_str     0x00035a9e       0x4c ./board/board.o
+ .debug_str     0x00035ab9       0x4c ./board/board.o
                               0x316e6 (size before relaxing)
- .debug_str     0x00035aea      0x300 ./board/clock_config.o
+ .debug_str     0x00035b05      0x300 ./board/clock_config.o
                               0x3122c (size before relaxing)
- .debug_str     0x00035dea       0x31 ./board/peripherals.o
+ .debug_str     0x00035e05       0x31 ./board/peripherals.o
                                0x2e01 (size before relaxing)
- .debug_str     0x00035e1b      0x1e1 ./board/pin_mux.o
+ .debug_str     0x00035e36      0x1e1 ./board/pin_mux.o
                               0x3098f (size before relaxing)
- .debug_str     0x00035ffc       0x4f ./CMSIS/system_MKL25Z4.o
+ .debug_str     0x00036017       0x4f ./CMSIS/system_MKL25Z4.o
                               0x2fc68 (size before relaxing)
 
 .comment        0x00000000       0x79

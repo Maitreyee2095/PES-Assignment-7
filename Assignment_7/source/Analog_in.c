@@ -1,6 +1,6 @@
 /*
- * ADC_config.c
- *
+ * Analog_in.c
+ *This file initializes TPM0 and ADC
  *  Created on: Nov 19, 2020
  *      Author: maitreyee Rao
  */
@@ -26,7 +26,8 @@ void Init_TPM0(int period) {
 	// Disable TPM for config
 	TPM0->SC = 0;
 
-
+	//set Mod and counter
+	//clock 48Khz/period for us 98Khz
 	TPM0->MOD = TPM_MOD_MOD(CLOCK / period);
 	TPM0->CNT = 0;
 
@@ -76,7 +77,7 @@ void Init_ADC() {
 void ADC_config(uint16_t *buffs, uint32_t num) {
 
 	int i =0;
-	//stop TPM0
+	//Start TPM0
 	TPM0->SC |= TPM_SC_CMOD(1);
 
 	for (i =0; i < num; i++) {
@@ -86,7 +87,7 @@ void ADC_config(uint16_t *buffs, uint32_t num) {
 		buffs[i] = ADC0->R[0];//fill buffer
 	}
 
-	// Stop Sampling
+	// Stop TPM0
 	TPM0->SC &= ~TPM_SC_CMOD_MASK;
 }
 
